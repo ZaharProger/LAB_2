@@ -57,4 +57,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Данная программа содержит реализацию 3 заданий из лабораторной работы 1. 
+Для выбора задания нажмите соответствующую кнопку, далее следуйте инструкциям на экране.
+
+
+Разработал программу: Домолего Захар
+Группа: ИСТб-20-4</value>
+  </data>
 </root>
