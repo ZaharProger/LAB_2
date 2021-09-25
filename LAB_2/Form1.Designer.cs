@@ -30,10 +30,10 @@ namespace LAB_2
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.task2Button = new System.Windows.Forms.Button();
-            this.task3Button = new System.Windows.Forms.Button();
-            this.infoButton = new System.Windows.Forms.Button();
-            this.task1Button = new System.Windows.Forms.Button();
+            this.Task2Button = new System.Windows.Forms.Button();
+            this.Task3Button = new System.Windows.Forms.Button();
+            this.InfoButton = new System.Windows.Forms.Button();
+            this.Task1Button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -46,68 +46,68 @@ namespace LAB_2
             this.label1.Text = "Для выбора задания нажмите на соответствующую кнопку";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // task2Button
+            // Task2Button
             // 
-            this.task2Button.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.task2Button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.task2Button.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.task2Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.task2Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.task2Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.task2Button.Location = new System.Drawing.Point(419, 200);
-            this.task2Button.Name = "task2Button";
-            this.task2Button.Size = new System.Drawing.Size(150, 61);
-            this.task2Button.TabIndex = 2;
-            this.task2Button.Text = "Задание на for";
-            this.task2Button.UseVisualStyleBackColor = false;
+            this.Task2Button.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Task2Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Task2Button.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.Task2Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.Task2Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.Task2Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Task2Button.Location = new System.Drawing.Point(419, 200);
+            this.Task2Button.Name = "Task2Button";
+            this.Task2Button.Size = new System.Drawing.Size(150, 61);
+            this.Task2Button.TabIndex = 2;
+            this.Task2Button.Text = "Задание на for";
+            this.Task2Button.UseVisualStyleBackColor = false;
             // 
-            // task3Button
+            // Task3Button
             // 
-            this.task3Button.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.task3Button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.task3Button.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.task3Button.FlatAppearance.BorderSize = 2;
-            this.task3Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.task3Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.task3Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.task3Button.Location = new System.Drawing.Point(719, 200);
-            this.task3Button.Name = "task3Button";
-            this.task3Button.Size = new System.Drawing.Size(150, 61);
-            this.task3Button.TabIndex = 3;
-            this.task3Button.Text = "Задание на строки";
-            this.task3Button.UseVisualStyleBackColor = false;
+            this.Task3Button.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Task3Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Task3Button.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.Task3Button.FlatAppearance.BorderSize = 2;
+            this.Task3Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.Task3Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.Task3Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Task3Button.Location = new System.Drawing.Point(719, 200);
+            this.Task3Button.Name = "Task3Button";
+            this.Task3Button.Size = new System.Drawing.Size(150, 61);
+            this.Task3Button.TabIndex = 3;
+            this.Task3Button.Text = "Задание на строки";
+            this.Task3Button.UseVisualStyleBackColor = false;
             // 
-            // infoButton
+            // InfoButton
             // 
-            this.infoButton.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.infoButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.infoButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.infoButton.FlatAppearance.BorderSize = 2;
-            this.infoButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.infoButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.infoButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.infoButton.Location = new System.Drawing.Point(808, 399);
-            this.infoButton.Name = "infoButton";
-            this.infoButton.Size = new System.Drawing.Size(150, 50);
-            this.infoButton.TabIndex = 4;
-            this.infoButton.Text = "О программе";
-            this.infoButton.UseVisualStyleBackColor = false;
-            this.infoButton.Click += new System.EventHandler(this.infoButton_Click);
+            this.InfoButton.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.InfoButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.InfoButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.InfoButton.FlatAppearance.BorderSize = 2;
+            this.InfoButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.InfoButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.InfoButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.InfoButton.Location = new System.Drawing.Point(808, 399);
+            this.InfoButton.Name = "InfoButton";
+            this.InfoButton.Size = new System.Drawing.Size(150, 50);
+            this.InfoButton.TabIndex = 4;
+            this.InfoButton.Text = "О программе";
+            this.InfoButton.UseVisualStyleBackColor = false;
+            this.InfoButton.Click += new System.EventHandler(this.infoButton_Click);
             // 
-            // task1Button
+            // Task1Button
             // 
-            this.task1Button.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.task1Button.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.task1Button.FlatAppearance.BorderSize = 2;
-            this.task1Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.task1Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.task1Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.task1Button.Location = new System.Drawing.Point(119, 200);
-            this.task1Button.Name = "task1Button";
-            this.task1Button.Size = new System.Drawing.Size(150, 61);
-            this.task1Button.TabIndex = 5;
-            this.task1Button.Text = "Задание на if";
-            this.task1Button.UseVisualStyleBackColor = false;
+            this.Task1Button.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Task1Button.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.Task1Button.FlatAppearance.BorderSize = 2;
+            this.Task1Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.Task1Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.Task1Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Task1Button.Location = new System.Drawing.Point(119, 200);
+            this.Task1Button.Name = "Task1Button";
+            this.Task1Button.Size = new System.Drawing.Size(150, 61);
+            this.Task1Button.TabIndex = 5;
+            this.Task1Button.Text = "Задание на if";
+            this.Task1Button.UseVisualStyleBackColor = false;
             // 
             // MainMenu
             // 
@@ -115,10 +115,10 @@ namespace LAB_2
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(984, 461);
-            this.Controls.Add(this.task1Button);
-            this.Controls.Add(this.infoButton);
-            this.Controls.Add(this.task3Button);
-            this.Controls.Add(this.task2Button);
+            this.Controls.Add(this.Task1Button);
+            this.Controls.Add(this.InfoButton);
+            this.Controls.Add(this.Task3Button);
+            this.Controls.Add(this.Task2Button);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ForeColor = System.Drawing.Color.Black;
@@ -134,10 +134,10 @@ namespace LAB_2
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button task2Button;
-        private System.Windows.Forms.Button task3Button;
-        private System.Windows.Forms.Button infoButton;
-        private System.Windows.Forms.Button task1Button;
+        private System.Windows.Forms.Button Task2Button;
+        private System.Windows.Forms.Button Task3Button;
+        private System.Windows.Forms.Button InfoButton;
+        private System.Windows.Forms.Button Task1Button;
     }
 }
 
