@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace LAB_2
 {
-    public partial class programmeInfo : Form
+    public partial class ProgrammeInfo : Form
     {
-        public programmeInfo()
+        public ProgrammeInfo()
         {
             InitializeComponent();
         }

@@ -17,7 +17,7 @@ namespace LAB_2
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new mainMenu());
+            Application.Run(new MainMenu());
         }
     }
 }

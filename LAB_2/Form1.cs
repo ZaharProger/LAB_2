@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LAB_2
 {
-    public partial class mainMenu : Form
+    public partial class MainMenu : Form
     {
-        public mainMenu()
+        public MainMenu()
         {
             InitializeComponent();
         }
@@ -22,6 +22,9 @@ namespace LAB_2
 
         }
 
- 
+        private void infoButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
