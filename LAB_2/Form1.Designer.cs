@@ -109,6 +109,7 @@ namespace LAB_2
             this.Task1Button.TabIndex = 5;
             this.Task1Button.Text = "Задание на if";
             this.Task1Button.UseVisualStyleBackColor = false;
+            this.Task1Button.Click += new System.EventHandler(this.Task1Button_Click);
             // 
             // MainMenu
             // 

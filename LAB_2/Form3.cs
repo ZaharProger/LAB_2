@@ -14,5 +14,11 @@ namespace LAB_2
         {
             InitializeComponent();
         }
+
+        private void Task1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Form mainForm = Application.OpenForms[0];
+            mainForm.Show();
+        }
     }
 }

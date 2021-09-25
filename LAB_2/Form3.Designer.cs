@@ -205,6 +205,7 @@ namespace LAB_2
             this.Name = "Task1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form3";
+            this.FormClosed += Task1_FormClosed;
             this.ResumeLayout(false);
             this.PerformLayout();
 
