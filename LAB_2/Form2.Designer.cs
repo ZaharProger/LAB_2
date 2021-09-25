@@ -54,6 +54,7 @@ namespace LAB_2
             this.Name = "ProgrammeInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "О программе";
+            this.FormClosed += ProgrammeInfo_FormClosed;
             this.ResumeLayout(false);
 
         }
