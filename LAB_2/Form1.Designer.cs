@@ -92,7 +92,7 @@ namespace LAB_2
             this.InfoButton.TabIndex = 4;
             this.InfoButton.Text = "О программе";
             this.InfoButton.UseVisualStyleBackColor = false;
-            this.InfoButton.Click += new System.EventHandler(this.infoButton_Click);
+            this.InfoButton.Click += new System.EventHandler(this.InfoButton_Click);
             // 
             // Task1Button
             // 

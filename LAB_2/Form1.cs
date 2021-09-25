@@ -22,9 +22,11 @@ namespace LAB_2
 
         }
 
-        private void infoButton_Click(object sender, EventArgs e)
+        private void InfoButton_Click(object sender, EventArgs e)
         {
-
+            Form programmeInfoForm = new ProgrammeInfo();
+            programmeInfoForm.Show();
+            this.Hide();
         }
     }
 }
