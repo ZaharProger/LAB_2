@@ -30,5 +30,12 @@ namespace LAB_2
             task1Form.Show();
             Hide();
         }
+
+        private void Task2Button_Click(object sender, EventArgs e)
+        {
+            Form task2Form = new Task2();
+            task2Form.Show();
+            Hide();
+        }
     }
 }

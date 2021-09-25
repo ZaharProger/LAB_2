@@ -61,6 +61,7 @@ namespace LAB_2
             this.Task2Button.TabIndex = 2;
             this.Task2Button.Text = "Задание на for";
             this.Task2Button.UseVisualStyleBackColor = false;
+            this.Task2Button.Click += new System.EventHandler(this.Task2Button_Click);
             // 
             // Task3Button
             // 
@@ -98,6 +99,7 @@ namespace LAB_2
             // Task1Button
             // 
             this.Task1Button.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Task1Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Task1Button.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Task1Button.FlatAppearance.BorderSize = 2;
             this.Task1Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));

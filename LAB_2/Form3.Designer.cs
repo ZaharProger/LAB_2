@@ -169,6 +169,7 @@ namespace LAB_2
             // CalculationButton
             // 
             this.CalculationButton.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.CalculationButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CalculationButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.CalculationButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.CalculationButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
@@ -201,11 +202,10 @@ namespace LAB_2
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Task1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form3";
-            this.FormClosed += Task1_FormClosed;
+            this.Text = "Задание на if";
             this.ResumeLayout(false);
             this.PerformLayout();
 
