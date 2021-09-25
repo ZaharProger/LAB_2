@@ -1,7 +1,7 @@
 ﻿
 namespace LAB_2
 {
-    partial class Form1
+    partial class mainMenu
     {
         /// <summary>
         ///  Required designer variable.
@@ -106,11 +106,11 @@ namespace LAB_2
             this.infoButton.Text = "О программе";
             this.infoButton.UseVisualStyleBackColor = false;
             // 
-            // Form1
+            // mainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(984, 461);
             this.Controls.Add(this.infoButton);
             this.Controls.Add(this.task3Button);
@@ -120,8 +120,8 @@ namespace LAB_2
             this.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ForeColor = System.Drawing.Color.Black;
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.Name = "Form1";
-            this.Text = "LAB_2";
+            this.Name = "mainMenu";
+            this.Text = "Лабораторная работа 2";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
