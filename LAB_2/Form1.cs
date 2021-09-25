@@ -17,16 +17,11 @@ namespace LAB_2
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void InfoButton_Click(object sender, EventArgs e)
         {
             Form programmeInfoForm = new ProgrammeInfo();
             programmeInfoForm.Show();
-            this.Hide();
+            Hide();
         }
     }
 }

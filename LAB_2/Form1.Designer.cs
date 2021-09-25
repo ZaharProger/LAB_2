@@ -51,6 +51,7 @@ namespace LAB_2
             this.Task2Button.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Task2Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Task2Button.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.Task2Button.FlatAppearance.BorderSize = 2;
             this.Task2Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.Task2Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.Task2Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -125,7 +126,6 @@ namespace LAB_2
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "MainMenu";
             this.Text = "Лабораторная работа 2";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
