@@ -112,6 +112,7 @@ namespace LAB_2
             this.Name = "Task2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Задание на for";
+            this.FormClosed += Task2_FormClosed;
             this.ResumeLayout(false);
             this.PerformLayout();
 
