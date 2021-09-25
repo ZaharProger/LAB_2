@@ -78,6 +78,7 @@ namespace LAB_2
             this.Task3Button.TabIndex = 3;
             this.Task3Button.Text = "Задание на строки";
             this.Task3Button.UseVisualStyleBackColor = false;
+            this.Task3Button.Click += new System.EventHandler(this.Task3Button_Click);
             // 
             // InfoButton
             // 
