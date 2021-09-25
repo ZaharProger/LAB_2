@@ -110,6 +110,7 @@ namespace LAB_2
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Task2";
             this.Text = "Задание на for";
+            this.FormClosed += Task2_FormClosed;
             this.ResumeLayout(false);
             this.PerformLayout();
 
