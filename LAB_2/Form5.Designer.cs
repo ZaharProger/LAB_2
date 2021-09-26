@@ -87,6 +87,7 @@ namespace LAB_2
             this.CalculationButton.TabIndex = 4;
             this.CalculationButton.Text = "Вычислить";
             this.CalculationButton.UseVisualStyleBackColor = false;
+            this.CalculationButton.Click += new System.EventHandler(this.CalculationButton_Click);
             // 
             // Task3
             // 

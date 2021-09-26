@@ -20,5 +20,22 @@ namespace LAB_2
             Form mainForm = Application.OpenForms[0];
             mainForm.Show();
         }
+
+        private void CalculationButton_Click(object sender, EventArgs e)
+        {
+            //Запрос на ввод строки
+            string expression = StringField.Text;
+
+            //Логика
+            ProgrammeResult inputCheckResult = Logic.InputCheckTask3(expression);
+            ProgrammeResult programmeResult;
+            if (inputCheckResult.GetSuccessStatus())
+                programmeResult = Logic.CalculateSum(expression);
+            else
+                programmeResult = new ProgrammeResult();
+
+            //Вывод результата
+            MessageBox.Show(inputCheckResult.GetMessage() + '\n' + programmeResult.GetMessage());
+        }
     }
 }
