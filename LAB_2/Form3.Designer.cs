@@ -180,6 +180,7 @@ namespace LAB_2
             this.CalculationButton.TabIndex = 13;
             this.CalculationButton.Text = "Определить";
             this.CalculationButton.UseVisualStyleBackColor = false;
+            this.CalculationButton.Click += new System.EventHandler(this.CalculationButton_Click);
             // 
             // Task1
             // 
@@ -206,7 +207,6 @@ namespace LAB_2
             this.Name = "Task1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Задание на if";
-            this.FormClosed += Task1_FormClosed;
             this.ResumeLayout(false);
             this.PerformLayout();
 
