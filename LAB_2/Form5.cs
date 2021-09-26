@@ -13,6 +13,7 @@ namespace LAB_2
         public Task3()
         {
             InitializeComponent();
+            StringField.Text = Properties.Settings.Default.expression.ToString();
         }
 
         public void Task3_FormClosed(object sender, FormClosedEventArgs e)

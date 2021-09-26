@@ -13,6 +13,8 @@ namespace LAB_2
         public Task2()
         {
             InitializeComponent();
+            GroupSizeField.Text = Properties.Settings.Default.groupSize.ToString();
+            NumsField.Text = Properties.Settings.Default.nums.ToString();
         }
 
         private void Task2_FormClosed(object sender, FormClosedEventArgs e)

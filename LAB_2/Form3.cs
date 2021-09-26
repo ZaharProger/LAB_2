@@ -13,6 +13,12 @@ namespace LAB_2
         public Task1()
         {
             InitializeComponent();
+            ArrivalHoursField.Text = Properties.Settings.Default.arrivalHours.ToString();
+            ArrivalMinutesField.Text = Properties.Settings.Default.arrivalMinutes.ToString();
+            DepartureHoursField.Text = Properties.Settings.Default.departureHours.ToString();
+            DepartureMinutesField.Text = Properties.Settings.Default.departureMinutes.ToString();
+            PassengerHoursField.Text = Properties.Settings.Default.passengerHours.ToString();
+            PassengerMinutesField.Text = Properties.Settings.Default.passengerMinutes.ToString();
         }
 
         private void Task1_FormClosed(object sender, FormClosedEventArgs e)
