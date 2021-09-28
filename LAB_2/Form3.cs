@@ -50,5 +50,19 @@ namespace LAB_2
             //Вывод результата
             MessageBox.Show(inputCheckResult.GetMessage() + '\n' + programmeResult.GetMessage());
         }
+
+        //Очистка ввода
+        private void ClearButton_Click(object sender, EventArgs e)
+        {
+            ArrivalHoursField.Text = Properties.Settings.Default.arrivalHours.ToString();
+            ArrivalMinutesField.Text = Properties.Settings.Default.arrivalMinutes.ToString();
+            DepartureHoursField.Text = Properties.Settings.Default.departureHours.ToString();
+            DepartureMinutesField.Text = Properties.Settings.Default.departureMinutes.ToString();
+            PassengerHoursField.Text = Properties.Settings.Default.passengerHours.ToString();
+            PassengerMinutesField.Text = Properties.Settings.Default.passengerMinutes.ToString();
+            MessageBox.Show("Введенные данные очищены!");
+        }
+
+        
     }
 }

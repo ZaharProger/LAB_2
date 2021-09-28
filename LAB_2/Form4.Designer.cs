@@ -69,7 +69,7 @@ namespace LAB_2
             this.GroupSizeField.Location = new System.Drawing.Point(415, 213);
             this.GroupSizeField.Name = "GroupSizeField";
             this.GroupSizeField.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.GroupSizeField.Size = new System.Drawing.Size(357, 35);
+            this.GroupSizeField.Size = new System.Drawing.Size(348, 35);
             this.GroupSizeField.TabIndex = 3;
             // 
             // NumsField
@@ -113,7 +113,6 @@ namespace LAB_2
             this.Name = "Task2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Задание на for";
-            this.FormClosed += Task2_FormClosed;
             this.ResumeLayout(false);
             this.PerformLayout();
 

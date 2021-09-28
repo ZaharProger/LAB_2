@@ -17,6 +17,7 @@ namespace LAB_2
             InitializeComponent();
         }
 
+        //Вызов информации о программе по нажатию кнопки
         private void InfoButton_Click(object sender, EventArgs e)
         {
             Form programmeInfoForm = new ProgrammeInfo();
@@ -24,6 +25,7 @@ namespace LAB_2
             Hide();
         }
 
+        //Вызов Задания 1 по нажатию кнопки
         private void Task1Button_Click(object sender, EventArgs e)
         {
             Form task1Form = new Task1();
@@ -31,6 +33,7 @@ namespace LAB_2
             Hide();
         }
 
+        //Вызов Задания 2 по нажатию кнопки 
         private void Task2Button_Click(object sender, EventArgs e)
         {
             Form task2Form = new Task2();
@@ -38,6 +41,7 @@ namespace LAB_2
             Hide();
         }
 
+        //Вызов Задания 3 по нажатию кнопки
         private void Task3Button_Click(object sender, EventArgs e)
         {
             Form task3Form = new Task3();
