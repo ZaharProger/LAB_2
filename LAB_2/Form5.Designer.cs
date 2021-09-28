@@ -49,7 +49,7 @@ namespace LAB_2
             // 
             this.label2.Location = new System.Drawing.Point(3, 143);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(673, 76);
+            this.label2.Size = new System.Drawing.Size(673, 117);
             this.label2.TabIndex = 1;
             this.label2.Text = "Строка должна содержать последовательность вида a1+/-a2+/-a3+/-...+/-an, где:\r\n1." +
     " n > 1\r\n2. ai - число, в записи которого от 1 до 19 цифр\r\n";
@@ -60,17 +60,17 @@ namespace LAB_2
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(3, 299);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(139, 21);
+            this.label3.Size = new System.Drawing.Size(177, 27);
             this.label3.TabIndex = 2;
             this.label3.Text = "Введите строку:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // StringField
             // 
-            this.StringField.Location = new System.Drawing.Point(148, 296);
+            this.StringField.Location = new System.Drawing.Point(186, 296);
             this.StringField.Name = "StringField";
             this.StringField.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.StringField.Size = new System.Drawing.Size(617, 29);
+            this.StringField.Size = new System.Drawing.Size(579, 35);
             this.StringField.TabIndex = 3;
             // 
             // CalculationButton
@@ -91,7 +91,7 @@ namespace LAB_2
             // 
             // Task3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 27F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(784, 461);

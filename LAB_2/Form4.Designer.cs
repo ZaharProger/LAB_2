@@ -48,36 +48,36 @@ namespace LAB_2
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(2, 208);
+            this.label2.Location = new System.Drawing.Point(2, 212);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(319, 35);
+            this.label2.Size = new System.Drawing.Size(424, 35);
             this.label2.TabIndex = 1;
             this.label2.Text = "Размер группы идущих подряд чисел:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(2, 285);
+            this.label3.Location = new System.Drawing.Point(12, 278);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(246, 40);
+            this.label3.Size = new System.Drawing.Size(311, 40);
             this.label3.TabIndex = 2;
             this.label3.Text = "Введите числа через пробел:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // GroupSizeField
             // 
-            this.GroupSizeField.Location = new System.Drawing.Point(327, 212);
+            this.GroupSizeField.Location = new System.Drawing.Point(415, 213);
             this.GroupSizeField.Name = "GroupSizeField";
             this.GroupSizeField.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.GroupSizeField.Size = new System.Drawing.Size(383, 29);
+            this.GroupSizeField.Size = new System.Drawing.Size(357, 35);
             this.GroupSizeField.TabIndex = 3;
             // 
             // NumsField
             // 
-            this.NumsField.Location = new System.Drawing.Point(254, 292);
+            this.NumsField.Location = new System.Drawing.Point(319, 282);
             this.NumsField.Name = "NumsField";
             this.NumsField.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.NumsField.Size = new System.Drawing.Size(456, 29);
+            this.NumsField.Size = new System.Drawing.Size(453, 35);
             this.NumsField.TabIndex = 4;
             // 
             // CalculationButton
@@ -98,7 +98,7 @@ namespace LAB_2
             // 
             // Task2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 27F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(784, 461);

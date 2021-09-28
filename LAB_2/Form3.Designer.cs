@@ -47,9 +47,9 @@ namespace LAB_2
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(130, 40);
+            this.label1.Location = new System.Drawing.Point(97, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(540, 90);
+            this.label1.Size = new System.Drawing.Size(617, 143);
             this.label1.TabIndex = 0;
             this.label1.Text = "Данная программа определяет, стоит ли поезд на платформе.\r\n\r\nВ поля слева от двое" +
     "точия введите часы (от 0 до 24)\r\nВ поля справа от двоеточия введите минуты (от 0" +
@@ -59,7 +59,7 @@ namespace LAB_2
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(390, 177);
+            this.label2.Location = new System.Drawing.Point(390, 192);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(20, 20);
             this.label2.TabIndex = 1;
@@ -68,7 +68,7 @@ namespace LAB_2
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(390, 257);
+            this.label3.Location = new System.Drawing.Point(390, 272);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(20, 20);
             this.label3.TabIndex = 2;
@@ -77,7 +77,7 @@ namespace LAB_2
             // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point(390, 337);
+            this.label4.Location = new System.Drawing.Point(390, 352);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(20, 20);
             this.label4.TabIndex = 3;
@@ -87,81 +87,81 @@ namespace LAB_2
             // ArrivalHoursField
             // 
             this.ArrivalHoursField.BackColor = System.Drawing.SystemColors.Window;
-            this.ArrivalHoursField.Location = new System.Drawing.Point(252, 174);
+            this.ArrivalHoursField.Location = new System.Drawing.Point(252, 189);
             this.ArrivalHoursField.Name = "ArrivalHoursField";
             this.ArrivalHoursField.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.ArrivalHoursField.Size = new System.Drawing.Size(131, 29);
+            this.ArrivalHoursField.Size = new System.Drawing.Size(131, 35);
             this.ArrivalHoursField.TabIndex = 4;
             this.ArrivalHoursField.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // ArrivalMinutesField
             // 
-            this.ArrivalMinutesField.Location = new System.Drawing.Point(415, 174);
+            this.ArrivalMinutesField.Location = new System.Drawing.Point(415, 189);
             this.ArrivalMinutesField.Name = "ArrivalMinutesField";
             this.ArrivalMinutesField.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.ArrivalMinutesField.Size = new System.Drawing.Size(131, 29);
+            this.ArrivalMinutesField.Size = new System.Drawing.Size(131, 35);
             this.ArrivalMinutesField.TabIndex = 5;
             this.ArrivalMinutesField.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // DepartureHoursField
             // 
-            this.DepartureHoursField.Location = new System.Drawing.Point(252, 254);
+            this.DepartureHoursField.Location = new System.Drawing.Point(252, 269);
             this.DepartureHoursField.Name = "DepartureHoursField";
             this.DepartureHoursField.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.DepartureHoursField.Size = new System.Drawing.Size(131, 29);
+            this.DepartureHoursField.Size = new System.Drawing.Size(131, 35);
             this.DepartureHoursField.TabIndex = 6;
             this.DepartureHoursField.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // DepartureMinutesField
             // 
-            this.DepartureMinutesField.Location = new System.Drawing.Point(415, 254);
+            this.DepartureMinutesField.Location = new System.Drawing.Point(415, 269);
             this.DepartureMinutesField.Name = "DepartureMinutesField";
             this.DepartureMinutesField.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.DepartureMinutesField.Size = new System.Drawing.Size(131, 29);
+            this.DepartureMinutesField.Size = new System.Drawing.Size(131, 35);
             this.DepartureMinutesField.TabIndex = 7;
             this.DepartureMinutesField.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // PassengerHoursField
             // 
-            this.PassengerHoursField.Location = new System.Drawing.Point(252, 334);
+            this.PassengerHoursField.Location = new System.Drawing.Point(252, 349);
             this.PassengerHoursField.Name = "PassengerHoursField";
             this.PassengerHoursField.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.PassengerHoursField.Size = new System.Drawing.Size(131, 29);
+            this.PassengerHoursField.Size = new System.Drawing.Size(131, 35);
             this.PassengerHoursField.TabIndex = 8;
             this.PassengerHoursField.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // PassengerMinutesField
             // 
-            this.PassengerMinutesField.Location = new System.Drawing.Point(415, 334);
+            this.PassengerMinutesField.Location = new System.Drawing.Point(415, 349);
             this.PassengerMinutesField.Name = "PassengerMinutesField";
             this.PassengerMinutesField.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.PassengerMinutesField.Size = new System.Drawing.Size(131, 29);
+            this.PassengerMinutesField.Size = new System.Drawing.Size(131, 35);
             this.PassengerMinutesField.TabIndex = 9;
             this.PassengerMinutesField.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label5
             // 
-            this.label5.Location = new System.Drawing.Point(310, 151);
+            this.label5.Location = new System.Drawing.Point(284, 152);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(180, 20);
+            this.label5.Size = new System.Drawing.Size(236, 34);
             this.label5.TabIndex = 10;
             this.label5.Text = "Прибытие поезда";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label6
             // 
-            this.label6.Location = new System.Drawing.Point(310, 231);
+            this.label6.Location = new System.Drawing.Point(284, 232);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(180, 20);
+            this.label6.Size = new System.Drawing.Size(236, 34);
             this.label6.TabIndex = 11;
             this.label6.Text = "Отправление поезда";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label7
             // 
-            this.label7.Location = new System.Drawing.Point(295, 311);
+            this.label7.Location = new System.Drawing.Point(269, 312);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(210, 20);
+            this.label7.Size = new System.Drawing.Size(266, 34);
             this.label7.TabIndex = 12;
             this.label7.Text = "Прибытие пассажира";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -184,7 +184,7 @@ namespace LAB_2
             // 
             // Task1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 27F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(784, 480);
