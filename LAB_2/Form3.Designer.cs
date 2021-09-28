@@ -256,7 +256,7 @@ namespace LAB_2
             this.ClearButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClearButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClearButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ClearButton.Location = new System.Drawing.Point(653, 389);
+            this.ClearButton.Location = new System.Drawing.Point(641, 389);
             this.ClearButton.Name = "ClearButton";
             this.ClearButton.Size = new System.Drawing.Size(131, 79);
             this.ClearButton.TabIndex = 20;
@@ -296,7 +296,6 @@ namespace LAB_2
             this.Name = "Task1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Задание на if";
-            this.FormClosed += Task1_FormClosed;
             this.ResumeLayout(false);
             this.PerformLayout();
 
