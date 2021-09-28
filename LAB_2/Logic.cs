@@ -15,6 +15,8 @@ namespace LAB_2
             ProgrammeResult inputCheckResult = new ProgrammeResult("-", true);
             try
             {
+                inputHours = Logic.DeleteSpace(inputHours);
+                inputMinutes = Logic.DeleteSpace(inputMinutes);
                 short hours = short.Parse(inputHours);
                 short minutes = short.Parse(inputMinutes);
             }
@@ -122,6 +124,7 @@ namespace LAB_2
             ProgrammeResult result = new ProgrammeResult("Получены корректные входные данные", true);
             try
             {
+                inputData = Logic.DeleteSpace(inputData);
                 short value = short.Parse(inputData);
             }
             catch (ArgumentNullException)
@@ -193,6 +196,7 @@ namespace LAB_2
         //Проверка пользовательского ввода
         public static ProgrammeResult InputCheckTask3(string inputData)
         {
+            inputData = Logic.DeleteSpace(inputData);
             bool isCorrect = true;
             byte digitsCounter = 0; //Подсчет цифр в числе
             byte signsCounter = 0; //Детектор соседних знаков (если в строке содержится ++ или +- или -+ или --, то вернуть false)
@@ -283,5 +287,21 @@ namespace LAB_2
         }
         #endregion[Методы для задания на строки]
 
+        //Удаление пробелов
+        private static string DeleteSpace(string data)
+        {
+            string editedData = "";
+            foreach(char symbol in data)
+            {
+                if (symbol != ' ')
+                {
+                    editedData += symbol;
+                    editedData += " ";
+                }  
+            }
+            if (editedData != "")
+                editedData = editedData.Substring(0, editedData.Length - 1);
+            return editedData;
+        }
     }
 }
