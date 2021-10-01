@@ -48,5 +48,12 @@ namespace LAB_2
             task3Form.Show();
             Hide();
         }
+
+        //Закрытие формы клавишей 
+        private void MainMenu_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+                Close();
+        }
     }
 }

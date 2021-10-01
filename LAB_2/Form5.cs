@@ -71,5 +71,11 @@ namespace LAB_2
                 StringField.Focus();
         }
         #endregion[Перемещение клавишами по элементам формы]
+
+        private void Task3_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+                Close();
+        }
     }
 }

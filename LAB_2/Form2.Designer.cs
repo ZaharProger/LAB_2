@@ -50,10 +50,12 @@ namespace LAB_2
             this.ClientSize = new System.Drawing.Size(584, 561);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ProgrammeInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "О программе";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ProgrammeInfo_KeyDown);
             this.FormClosed += ProgrammeInfo_FormClosed;
             this.ResumeLayout(false);
 

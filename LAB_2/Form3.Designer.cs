@@ -305,6 +305,7 @@ namespace LAB_2
             this.Name = "Task1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Задание на if";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Task1_KeyDown);
             this.FormClosed += Task1_FormClosed;
             this.ResumeLayout(false);
             this.PerformLayout();

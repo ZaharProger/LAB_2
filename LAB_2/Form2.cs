@@ -21,5 +21,11 @@ namespace LAB_2
             mainForm.Show();
         }
 
+        //Закрытие формы клавишей
+        private void ProgrammeInfo_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+                Close();
+        }
     }
 }

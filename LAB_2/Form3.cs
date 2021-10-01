@@ -151,5 +151,11 @@ namespace LAB_2
 
         }
         #endregion[Переход по полям ввода клавишей Enter]
+
+        private void Task1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+                Close();
+        }
     }
 }

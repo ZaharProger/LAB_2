@@ -66,9 +66,9 @@ namespace LAB_2
 
         private void NumsField_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter || e.KeyCode == Keys.Up)
+            if (e.KeyCode == Keys.Up)
                 GroupSizeField.Focus();
-            else if (e.KeyCode == Keys.Down)
+            else if (e.KeyCode == Keys.Enter || e.KeyCode == Keys.Down)
                 CalculationButton.Focus();
         }
 
@@ -88,5 +88,11 @@ namespace LAB_2
                 GroupSizeField.Focus();
         }
         #endregion[Перемещение клавишами по элементам формы]
+
+        private void Task2_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+                Close();
+        }
     }
 }
