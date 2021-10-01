@@ -55,5 +55,44 @@ namespace LAB_2
             if (e.KeyCode == Keys.Escape)
                 Close();
         }
+
+        #region[Переход по элементам формы клавишами]
+        private void Task1Button_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Right)
+                Task2Button.Focus();
+            else if (e.KeyCode == Keys.Left)
+                Task3Button.Focus();
+            else if (e.KeyCode == Keys.Up || e.KeyCode == Keys.Down)
+                InfoButton.Focus();
+        }
+
+        private void Task2Button_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Right)
+                Task3Button.Focus();
+            else if (e.KeyCode == Keys.Left)
+                Task1Button.Focus();
+            else if (e.KeyCode == Keys.Up || e.KeyCode == Keys.Down)
+                InfoButton.Focus();
+        }
+
+        private void Task3Button_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Right)
+                Task1Button.Focus();
+            else if (e.KeyCode == Keys.Left)
+                Task2Button.Focus();
+            else if (e.KeyCode == Keys.Up || e.KeyCode == Keys.Down)
+                InfoButton.Focus();
+        }
+
+        private void InfoButton_KeyDown(object sender, KeyEventArgs e)
+        {
+
+            if (e.KeyCode == Keys.Up || e.KeyCode == Keys.Down)
+                Task1Button.Focus();
+        }
+        #endregion[Переход по элементам формы клавишами]
     }
 }

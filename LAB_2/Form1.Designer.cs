@@ -63,6 +63,7 @@ namespace LAB_2
             this.Task2Button.Text = "Задание на for";
             this.Task2Button.UseVisualStyleBackColor = false;
             this.Task2Button.Click += new System.EventHandler(this.Task2Button_Click);
+            this.Task2Button.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Task2Button_KeyDown);
             // 
             // Task3Button
             // 
@@ -80,6 +81,7 @@ namespace LAB_2
             this.Task3Button.Text = "Задание на строки";
             this.Task3Button.UseVisualStyleBackColor = false;
             this.Task3Button.Click += new System.EventHandler(this.Task3Button_Click);
+            this.Task3Button.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Task3Button_KeyDown);
             // 
             // InfoButton
             // 
@@ -97,6 +99,7 @@ namespace LAB_2
             this.InfoButton.Text = "О программе";
             this.InfoButton.UseVisualStyleBackColor = false;
             this.InfoButton.Click += new System.EventHandler(this.InfoButton_Click);
+            this.InfoButton.KeyDown += new System.Windows.Forms.KeyEventHandler(this.InfoButton_KeyDown);
             // 
             // Task1Button
             // 
@@ -114,6 +117,7 @@ namespace LAB_2
             this.Task1Button.Text = "Задание на if";
             this.Task1Button.UseVisualStyleBackColor = false;
             this.Task1Button.Click += new System.EventHandler(this.Task1Button_Click);
+            this.Task1Button.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Task1Button_KeyDown);
             // 
             // label2
             // 
