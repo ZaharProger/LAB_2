@@ -38,5 +38,12 @@ namespace LAB_2
             //Вывод результата
             MessageBox.Show(inputCheckResult.GetMessage() + '\n' + programmeResult.GetMessage());
         }
+
+        //Очистка ввода
+        private void ClearButton_Click(object sender, EventArgs e)
+        {
+            StringField.Text = Properties.Settings.Default.expression.ToString();
+            MessageBox.Show("Введенные данные очищены!");
+        }
     }
 }

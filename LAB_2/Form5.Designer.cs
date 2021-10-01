@@ -34,6 +34,7 @@ namespace LAB_2
             this.label3 = new System.Windows.Forms.Label();
             this.StringField = new System.Windows.Forms.TextBox();
             this.CalculationButton = new System.Windows.Forms.Button();
+            this.ClearButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -89,12 +90,28 @@ namespace LAB_2
             this.CalculationButton.UseVisualStyleBackColor = false;
             this.CalculationButton.Click += new System.EventHandler(this.CalculationButton_Click);
             // 
+            // ClearButton
+            // 
+            this.ClearButton.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ClearButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.ClearButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.ClearButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.ClearButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ClearButton.Location = new System.Drawing.Point(576, 362);
+            this.ClearButton.Name = "ClearButton";
+            this.ClearButton.Size = new System.Drawing.Size(140, 66);
+            this.ClearButton.TabIndex = 5;
+            this.ClearButton.Text = "Сбросить ввод";
+            this.ClearButton.UseVisualStyleBackColor = false;
+            this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
+            // 
             // Task3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 27F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(784, 461);
+            this.Controls.Add(this.ClearButton);
             this.Controls.Add(this.CalculationButton);
             this.Controls.Add(this.StringField);
             this.Controls.Add(this.label3);
@@ -105,7 +122,6 @@ namespace LAB_2
             this.Name = "Task3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Задание на строки";
-            this.FormClosed += Task3_FormClosed;
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -118,5 +134,6 @@ namespace LAB_2
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox StringField;
         private System.Windows.Forms.Button CalculationButton;
+        private System.Windows.Forms.Button ClearButton;
     }
 }
