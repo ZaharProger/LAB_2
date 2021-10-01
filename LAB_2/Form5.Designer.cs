@@ -48,12 +48,13 @@ namespace LAB_2
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(3, 143);
+            this.label2.Location = new System.Drawing.Point(3, 116);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(673, 117);
+            this.label2.Size = new System.Drawing.Size(673, 138);
             this.label2.TabIndex = 1;
             this.label2.Text = "Строка должна содержать последовательность вида a1+/-a2+/-a3+/-...+/-an, где:\r\n1." +
-    " n > 1\r\n2. ai - число, в записи которого от 1 до 19 цифр\r\n";
+    " n > 1\r\n2. ai - число, в записи которого от 1 до 19 цифр\r\n3.Строка не содержит п" +
+    "робелов";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label3
@@ -73,6 +74,7 @@ namespace LAB_2
             this.StringField.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.StringField.Size = new System.Drawing.Size(579, 35);
             this.StringField.TabIndex = 3;
+            this.StringField.KeyDown += new System.Windows.Forms.KeyEventHandler(this.StringField_KeyDown);
             // 
             // CalculationButton
             // 
@@ -89,6 +91,7 @@ namespace LAB_2
             this.CalculationButton.Text = "Вычислить";
             this.CalculationButton.UseVisualStyleBackColor = false;
             this.CalculationButton.Click += new System.EventHandler(this.CalculationButton_Click);
+            this.CalculationButton.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CalculationButton_KeyDown);
             // 
             // ClearButton
             // 
@@ -104,6 +107,7 @@ namespace LAB_2
             this.ClearButton.Text = "Сбросить ввод";
             this.ClearButton.UseVisualStyleBackColor = false;
             this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
+            this.ClearButton.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ClearButton_KeyDown);
             // 
             // Task3
             // 
@@ -118,10 +122,12 @@ namespace LAB_2
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Task3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Задание на строки";
+            this.FormClosed += Task3_FormClosed;
             this.ResumeLayout(false);
             this.PerformLayout();
 

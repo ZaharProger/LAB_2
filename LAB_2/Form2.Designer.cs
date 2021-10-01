@@ -37,14 +37,14 @@ namespace LAB_2
             // 
             this.label1.Location = new System.Drawing.Point(130, 100);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(340, 360);
+            this.label1.Size = new System.Drawing.Size(340, 384);
             this.label1.TabIndex = 0;
             this.label1.Text = resources.GetString("label1.Text");
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ProgrammeInfo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 27F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(584, 561);

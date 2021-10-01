@@ -63,6 +63,93 @@ namespace LAB_2
             MessageBox.Show("Введенные данные очищены!");
         }
 
-        
+        #region[Переход по элементам формы клавишами]
+        private void ArrivalHoursField_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter || e.KeyCode == Keys.Right || e.KeyCode == Keys.Left)
+                ArrivalMinutesField.Focus();
+            else if (e.KeyCode == Keys.Up)
+                ClearButton.Focus();
+            else if (e.KeyCode == Keys.Down)
+                DepartureHoursField.Focus();
+        }
+
+        private void ArrivalMinutesField_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                DepartureHoursField.Focus();
+            else if (e.KeyCode == Keys.Up)
+                ClearButton.Focus();
+            else if (e.KeyCode == Keys.Left || e.KeyCode == Keys.Right)
+                ArrivalHoursField.Focus();
+            else if (e.KeyCode == Keys.Down)
+                DepartureMinutesField.Focus();
+        }
+
+        private void DepartureHoursField_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                DepartureMinutesField.Focus();
+            else if (e.KeyCode == Keys.Up)
+                ArrivalHoursField.Focus();
+            else if (e.KeyCode == Keys.Left || e.KeyCode == Keys.Right)
+                DepartureMinutesField.Focus();
+            else if (e.KeyCode == Keys.Down)
+                PassengerHoursField.Focus();
+        }
+
+        private void DepartureMinutesField_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                PassengerHoursField.Focus();
+            else if (e.KeyCode == Keys.Up)
+                ArrivalMinutesField.Focus();
+            else if (e.KeyCode == Keys.Left || e.KeyCode == Keys.Right)
+                DepartureHoursField.Focus();
+            else if (e.KeyCode == Keys.Down)
+                PassengerMinutesField.Focus();
+        }
+
+        private void PassengerHoursField_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                PassengerMinutesField.Focus();
+            else if (e.KeyCode == Keys.Up)
+                DepartureHoursField.Focus();
+            else if (e.KeyCode == Keys.Left || e.KeyCode == Keys.Right)
+                PassengerMinutesField.Focus();
+            else if (e.KeyCode == Keys.Down)
+                CalculationButton.Focus();
+        }
+
+        private void PassengerMinutesField_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                CalculationButton.Focus();
+            else if (e.KeyCode == Keys.Up)
+                DepartureMinutesField.Focus();
+            else if (e.KeyCode == Keys.Left || e.KeyCode == Keys.Right)
+                PassengerHoursField.Focus();
+            else if (e.KeyCode == Keys.Down)
+                CalculationButton.Focus();
+        }
+
+        private void CalculationButton_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Up)
+                PassengerMinutesField.Focus();
+            else if (e.KeyCode == Keys.Left || e.KeyCode == Keys.Right || e.KeyCode == Keys.Down)
+                ClearButton.Focus();
+        }
+
+        private void ClearButton_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Up || e.KeyCode == Keys.Left || e.KeyCode == Keys.Right)
+                CalculationButton.Focus();
+            else if (e.KeyCode == Keys.Down)
+                ArrivalHoursField.Focus();
+
+        }
+        #endregion[Переход по полям ввода клавишей Enter]
     }
 }

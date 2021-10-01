@@ -34,6 +34,7 @@ namespace LAB_2
             this.Task3Button = new System.Windows.Forms.Button();
             this.InfoButton = new System.Windows.Forms.Button();
             this.Task1Button = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -114,12 +115,22 @@ namespace LAB_2
             this.Task1Button.UseVisualStyleBackColor = false;
             this.Task1Button.Click += new System.EventHandler(this.Task1Button_Click);
             // 
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(257, 350);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(493, 112);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Для ознакомления с управлением программой перейдите в раздел О программе";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 27F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(984, 461);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.Task1Button);
             this.Controls.Add(this.InfoButton);
             this.Controls.Add(this.Task3Button);
@@ -142,6 +153,7 @@ namespace LAB_2
         private System.Windows.Forms.Button Task3Button;
         private System.Windows.Forms.Button InfoButton;
         private System.Windows.Forms.Button Task1Button;
+        private System.Windows.Forms.Label label2;
     }
 }
 

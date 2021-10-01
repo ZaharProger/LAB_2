@@ -51,9 +51,9 @@ namespace LAB_2
             // 
             this.label2.Location = new System.Drawing.Point(2, 212);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(424, 35);
+            this.label2.Size = new System.Drawing.Size(459, 35);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Размер группы идущих подряд чисел:";
+            this.label2.Text = "Число одинаковых идущих подряд чисел:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
@@ -67,11 +67,12 @@ namespace LAB_2
             // 
             // GroupSizeField
             // 
-            this.GroupSizeField.Location = new System.Drawing.Point(415, 213);
+            this.GroupSizeField.Location = new System.Drawing.Point(449, 213);
             this.GroupSizeField.Name = "GroupSizeField";
             this.GroupSizeField.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.GroupSizeField.Size = new System.Drawing.Size(124, 35);
+            this.GroupSizeField.Size = new System.Drawing.Size(181, 35);
             this.GroupSizeField.TabIndex = 3;
+            this.GroupSizeField.KeyDown += new System.Windows.Forms.KeyEventHandler(this.GroupSizeField_KeyDown);
             // 
             // NumsField
             // 
@@ -80,6 +81,7 @@ namespace LAB_2
             this.NumsField.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.NumsField.Size = new System.Drawing.Size(453, 35);
             this.NumsField.TabIndex = 4;
+            this.NumsField.KeyDown += new System.Windows.Forms.KeyEventHandler(this.NumsField_KeyDown);
             // 
             // CalculationButton
             // 
@@ -96,6 +98,7 @@ namespace LAB_2
             this.CalculationButton.Text = "Определить";
             this.CalculationButton.UseVisualStyleBackColor = false;
             this.CalculationButton.Click += new System.EventHandler(this.CalculationButton_Click);
+            this.CalculationButton.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CalculationButton_KeyDown);
             // 
             // ClearButton
             // 
@@ -111,6 +114,7 @@ namespace LAB_2
             this.ClearButton.Text = "Очистить ввод";
             this.ClearButton.UseVisualStyleBackColor = false;
             this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
+            this.ClearButton.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ClearButton_KeyDown);
             // 
             // Task2
             // 
@@ -126,10 +130,12 @@ namespace LAB_2
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Task2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Задание на for";
+            this.FormClosed += Task2_FormClosed;
             this.ResumeLayout(false);
             this.PerformLayout();
 

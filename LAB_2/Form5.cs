@@ -45,5 +45,31 @@ namespace LAB_2
             StringField.Text = Properties.Settings.Default.expression.ToString();
             MessageBox.Show("Введенные данные очищены!");
         }
+
+        #region[Перемещение клавишами по элементам формы]
+        private void StringField_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter || e.KeyCode == Keys.Down)
+                CalculationButton.Focus();
+            else if (e.KeyCode == Keys.Up)
+                ClearButton.Focus();
+        }
+
+        private void CalculationButton_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Up)
+                StringField.Focus();
+            else if (e.KeyCode == Keys.Left || e.KeyCode == Keys.Right || e.KeyCode == Keys.Down)
+                ClearButton.Focus();
+        }
+
+        private void ClearButton_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Up || e.KeyCode == Keys.Left || e.KeyCode == Keys.Right)
+                CalculationButton.Focus();
+            else if (e.KeyCode == Keys.Down)
+                StringField.Focus();
+        }
+        #endregion[Перемещение клавишами по элементам формы]
     }
 }

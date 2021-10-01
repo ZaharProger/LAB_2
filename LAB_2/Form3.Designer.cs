@@ -100,6 +100,7 @@ namespace LAB_2
             this.ArrivalHoursField.Size = new System.Drawing.Size(131, 35);
             this.ArrivalHoursField.TabIndex = 4;
             this.ArrivalHoursField.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.ArrivalHoursField.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ArrivalHoursField_KeyDown);
             // 
             // ArrivalMinutesField
             // 
@@ -109,6 +110,7 @@ namespace LAB_2
             this.ArrivalMinutesField.Size = new System.Drawing.Size(131, 35);
             this.ArrivalMinutesField.TabIndex = 5;
             this.ArrivalMinutesField.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.ArrivalMinutesField.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ArrivalMinutesField_KeyDown);
             // 
             // DepartureHoursField
             // 
@@ -118,6 +120,7 @@ namespace LAB_2
             this.DepartureHoursField.Size = new System.Drawing.Size(131, 35);
             this.DepartureHoursField.TabIndex = 6;
             this.DepartureHoursField.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.DepartureHoursField.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DepartureHoursField_KeyDown);
             // 
             // DepartureMinutesField
             // 
@@ -127,6 +130,7 @@ namespace LAB_2
             this.DepartureMinutesField.Size = new System.Drawing.Size(131, 35);
             this.DepartureMinutesField.TabIndex = 7;
             this.DepartureMinutesField.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.DepartureMinutesField.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DepartureMinutesField_KeyDown);
             // 
             // PassengerHoursField
             // 
@@ -136,6 +140,7 @@ namespace LAB_2
             this.PassengerHoursField.Size = new System.Drawing.Size(131, 35);
             this.PassengerHoursField.TabIndex = 8;
             this.PassengerHoursField.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.PassengerHoursField.KeyDown += new System.Windows.Forms.KeyEventHandler(this.PassengerHoursField_KeyDown);
             // 
             // PassengerMinutesField
             // 
@@ -145,6 +150,7 @@ namespace LAB_2
             this.PassengerMinutesField.Size = new System.Drawing.Size(131, 35);
             this.PassengerMinutesField.TabIndex = 9;
             this.PassengerMinutesField.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.PassengerMinutesField.KeyDown += new System.Windows.Forms.KeyEventHandler(this.PassengerMinutesField_KeyDown);
             // 
             // label5
             // 
@@ -188,6 +194,7 @@ namespace LAB_2
             this.CalculationButton.Text = "Определить";
             this.CalculationButton.UseVisualStyleBackColor = false;
             this.CalculationButton.Click += new System.EventHandler(this.CalculationButton_Click);
+            this.CalculationButton.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CalculationButton_KeyDown);
             // 
             // label8
             // 
@@ -263,6 +270,7 @@ namespace LAB_2
             this.ClearButton.Text = "Очистить ввод";
             this.ClearButton.UseVisualStyleBackColor = false;
             this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
+            this.ClearButton.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ClearButton_KeyDown);
             // 
             // Task1
             // 
@@ -292,10 +300,12 @@ namespace LAB_2
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Task1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Задание на if";
+            this.FormClosed += Task1_FormClosed;
             this.ResumeLayout(false);
             this.PerformLayout();
 
