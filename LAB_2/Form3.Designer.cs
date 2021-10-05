@@ -307,6 +307,7 @@ namespace LAB_2
             this.Text = "Задание на if";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Task1_KeyDown);
             this.FormClosed += Task1_FormClosed;
+            this.FormClosing += Task1_FormClosing;
             this.ResumeLayout(false);
             this.PerformLayout();
 

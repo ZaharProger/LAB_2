@@ -16,6 +16,12 @@ namespace LAB_2
             StringField.Text = Properties.Settings.Default.expression.ToString();
         }
 
+        private void Task3_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Properties.Settings.Default.expression = StringField.Text;
+            Properties.Settings.Default.Save();
+        }
+
         public void Task3_FormClosed(object sender, FormClosedEventArgs e)
         {
             Form mainForm = Application.OpenForms[0];
@@ -42,7 +48,7 @@ namespace LAB_2
         //Очистка ввода
         private void ClearButton_Click(object sender, EventArgs e)
         {
-            StringField.Text = Properties.Settings.Default.expression.ToString();
+            StringField.Text = "";
             MessageBox.Show("Введенные данные очищены!");
         }
 

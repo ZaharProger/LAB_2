@@ -21,6 +21,16 @@ namespace LAB_2
             PassengerMinutesField.Text = Properties.Settings.Default.passengerMinutes.ToString();
         }
 
+        private void Task1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Properties.Settings.Default.arrivalHours = ArrivalHoursField.Text;
+            Properties.Settings.Default.arrivalMinutes = ArrivalMinutesField.Text;
+            Properties.Settings.Default.departureHours = DepartureHoursField.Text;
+            Properties.Settings.Default.departureMinutes = DepartureMinutesField.Text;
+            Properties.Settings.Default.passengerHours = PassengerHoursField.Text;
+            Properties.Settings.Default.passengerMinutes = PassengerMinutesField.Text;
+            Properties.Settings.Default.Save();
+        }
         private void Task1_FormClosed(object sender, FormClosedEventArgs e)
         {
             Form mainForm = Application.OpenForms[0];
@@ -54,12 +64,12 @@ namespace LAB_2
         //Очистка ввода
         private void ClearButton_Click(object sender, EventArgs e)
         {
-            ArrivalHoursField.Text = Properties.Settings.Default.arrivalHours.ToString();
-            ArrivalMinutesField.Text = Properties.Settings.Default.arrivalMinutes.ToString();
-            DepartureHoursField.Text = Properties.Settings.Default.departureHours.ToString();
-            DepartureMinutesField.Text = Properties.Settings.Default.departureMinutes.ToString();
-            PassengerHoursField.Text = Properties.Settings.Default.passengerHours.ToString();
-            PassengerMinutesField.Text = Properties.Settings.Default.passengerMinutes.ToString();
+            ArrivalHoursField.Text = "";
+            ArrivalMinutesField.Text = "";
+            DepartureHoursField.Text = "";
+            DepartureMinutesField.Text = "";
+            PassengerHoursField.Text = "";
+            PassengerMinutesField.Text = "";
             MessageBox.Show("Введенные данные очищены!");
         }
 

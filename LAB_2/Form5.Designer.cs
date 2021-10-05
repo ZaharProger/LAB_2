@@ -129,6 +129,7 @@ namespace LAB_2
             this.Text = "Задание на строки";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Task3_KeyDown);
             this.FormClosed += Task3_FormClosed;
+            this.FormClosing += Task3_FormClosing;
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -17,6 +17,13 @@ namespace LAB_2
             NumsField.Text = Properties.Settings.Default.nums.ToString();
         }
 
+        private void Task2_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Properties.Settings.Default.groupSize = GroupSizeField.Text;
+            Properties.Settings.Default.nums = NumsField.Text;
+            Properties.Settings.Default.Save();
+        }
+
         private void Task2_FormClosed(object sender, FormClosedEventArgs e)
         {
             Form mainForm = Application.OpenForms[0];
@@ -48,13 +55,14 @@ namespace LAB_2
             MessageBox.Show(groupSizeCheckResult.GetMessage() + '\n' + numsCheckResult.GetMessage() + '\n' + programmeResult.GetMessage());
         }
 
-        #region[Перемещение клавишами по элементам формы]
         private void ClearButton_Click(object sender, EventArgs e)
         {
-            GroupSizeField.Text = Properties.Settings.Default.groupSize.ToString();
-            NumsField.Text = Properties.Settings.Default.nums.ToString();
+            GroupSizeField.Text = "";
+            NumsField.Text = "";
             MessageBox.Show("Введенные данные очищены!");
         }
+
+        #region[Перемещение клавишами по элементам формы]
 
         private void GroupSizeField_KeyDown(object sender, KeyEventArgs e)
         {
